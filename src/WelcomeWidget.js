@@ -36,7 +36,7 @@ export const WelcomeWidget  = GObject.registerClass({
         this.notify('welcome-text');
     }
 
-    onButtonClicked(_button) {
-        this.emit('button-clicked');
-    }
+    //onButtonClicked(_button) {
+      //  this.emit('button-clicked');
+    //}
 })
