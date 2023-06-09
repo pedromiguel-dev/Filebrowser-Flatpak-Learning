@@ -15,6 +15,9 @@ export const WelcomeWidget  = GObject.registerClass({
         )
     },
     InternalChildren: ['welcomeLabel'],
+    Signals: {
+        'button-clicked': {}
+    }
 }, class extends Gtk.Widget {
 
     get welcomeText() {
@@ -31,5 +34,9 @@ export const WelcomeWidget  = GObject.registerClass({
         this._welcomeLabel.visible = !!value;
         // Notify that the value has changed
         this.notify('welcome-text');
+    }
+
+    onButtonClicked(_button) {
+        this.emit('button-clicked');
     }
 })

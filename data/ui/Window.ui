@@ -4,7 +4,11 @@
 		<property name="titlebar">
 			<object class="GtkHeaderBar">
 				<property name="title-widget">
+					<object class="GtkLabel">
+						<property name="label">File Browser</property>
+					</object>
 					<object class="GtkStackSwitcher">
+						<property name="visible">true</property>
 						<property name="stack">viewStack</property>
 					</object>
 				</property>
@@ -18,6 +22,7 @@
 						<property name="title">Welcome</property>
 						<property name="child">
 							<object class="FbrWelcomeWidget">
+								<signal name="button-clicked" handler="onWelcomeButtonClicked"/>
 								<property name="welcome-text">Welcome to our new file browser! Window</property>
 								<property name="valign">center</property>
 								<style>

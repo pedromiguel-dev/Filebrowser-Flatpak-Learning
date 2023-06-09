@@ -30,6 +30,7 @@
                 </style>  
                 <property name="label">Let's go!</property>
                 <property name="halign">center</property>
+                <signal name="clicked" handler="onButtonClicked" />
             </object>
         </child>
     </template>
