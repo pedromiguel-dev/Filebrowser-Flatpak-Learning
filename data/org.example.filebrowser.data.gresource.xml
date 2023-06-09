@@ -5,4 +5,7 @@
 		<file>ui/Window.ui</file>
 		<file>css/style.css</file>
 	</gresource>
+	<gresource prefix="/org/example/filebrowser/icons/scalable/actions">
+		<file alias="filebrowser-welcome-symbolic.svg">icons/welcome-symbolic.svg</file>
+	</gresource>	
 </gresources>

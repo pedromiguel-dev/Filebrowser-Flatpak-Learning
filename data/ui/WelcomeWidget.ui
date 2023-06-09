@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
     <template class="FbrWelcomeWidget">
+        <style>
+            <class name="big"/>
+        </style>
         <property name="layout-manager">
             <object class="GtkBoxLayout">
                 <property name="orientation">vertical</property>
-                <property name="spacing">18</property>
             </object>
         </property>
         <child>
             <object class="GtkImage">
-                <property name="icon-name">system-file-manager-symbolic</property>
+                <property name="icon-name">filebrowser-welcome-symbolic</property>
                 <property name="icon-size">large</property>
             </object>
         </child>
@@ -23,6 +25,9 @@
         </child>
         <child>
             <object class="GtkButton">
+                <style>
+                    <class name="suggested-action"/>
+                </style>  
                 <property name="label">Let's go!</property>
                 <property name="halign">center</property>
             </object>

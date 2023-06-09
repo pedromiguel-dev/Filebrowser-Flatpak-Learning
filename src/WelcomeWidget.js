@@ -3,6 +3,7 @@ import Gtk from 'gi://Gtk?version=4.0'
 
 export const WelcomeWidget  = GObject.registerClass({
     GTypeName: 'FbrWelcomeWidget',
+    CssName: 'welcome',
     Template: 'resource:///org/example/filebrowser/ui/WelcomeWidget.ui',
     Properties: {
         WelcomeText: GObject.ParamSpec.string(
